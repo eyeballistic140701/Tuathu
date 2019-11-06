@@ -1,0 +1,12 @@
+{
+  "name": "ramsey/glitch-php",
+  "description": "A testing playground for using PHP on Glitch.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ben Ramsey",
+      "email": "ben@benramsey.com",
+      "homepage": "https://benramsey.com"
+    }
+  ]
+}
