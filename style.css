@@ -1,11 +1,105 @@
-/* CSS files add styling rules to your content */
-
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  font-family: Arial, sans-serif;
+  background-color: #01171b;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: white;
+  width: 100vw;
+  z-index: 10;
+  box-shadow: 0px 10px 10px -10px #000000;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+.nav .logo {
+  float: left;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.nav .login {
+  float: right;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+  position: sticky;
+  top: 0;
+  z-index:1;
+  padding-top: 25px; /* adjust as needed */
+  padding-bottom: 70px;
+}
+
+/* The svg path styles apply to the paths in the SVG, which represent the counties on the map */
+svg path {
+  fill: #00394f; /* The fill color of the counties */
+  stroke: #eee; /* The color of the borders between counties */
+  stroke-width: 0.25; /* The width of the borders between counties */
+}
+
+/* The svg path:hover styles apply to the counties when they're hovered over */
+svg path:hover {
+  fill: #006284; /* The fill color of a county when it's hovered over */
+  transition: 0.6s; /* The time it takes to change to the hover color */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over a county */
+}
+
+/* The #tooltip styles apply to the tooltip that appears when a county is hovered over */
+#tooltip {
+  position: fixed; /* Position tooltip relative to the viewport */
+  padding: 10px; /* Add some padding */
+  background-color: darkgrey; /* Dark background */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  font-family: Arial, sans-serif; /* Change the font, if desired */
+  font-size: 14px; /* Adjust the font size */
+  z-index: 1000; /* Ensure the tooltip appears above other elements */
+}
+
+.content-section {
+  position: relative;
+  z-index: 5;
+  background-color: #01171b;
+}
+
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+}
+.category {
+  background-color: #e9ecef;
+  padding: 20px;
+  text-align: center;
+}
+.company-info {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  width: auto;
+  height: 100vh;
+  color: white;
+}
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+body.user-is-scrolling .content-section {
+  transform: translateY(0);
 }
