@@ -2,31 +2,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #01171b;
 }
-/* .nav {
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  background-color: white;
-  width: 100vw;
-  z-index: 10;
-  box-shadow: 0px 10px 10px -10px #000000;
-}
 
-.nav .logo {
-  float: left;
-  text-align: left;
-  margin-left: 50px;
-}
-
-.nav .login {
-  float: right;
-  text-align: right;
-  margin-right: 50px;
-} */
 
 /*----------------------Navigation-----------------------*/
 .nav {
@@ -55,15 +31,15 @@ body {
 
 .nav .mainMenu li a {
   display: inline-block;
-  margin-left: 30px;
-  padding:0;
+  margin: 10px;
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
 }
 .nav .mainMenu li a:hover {
-  color: darkgreen;
-  font: bold;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 .nav .openMenu {
   font-size: 2rem;
@@ -92,7 +68,7 @@ body {
 }
 /*---------------Mobile Navigation------------------*/
 @media only screen and (max-width: 800px) {
-  .nav .mainMenu {
+  nav .mainMenu {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -109,16 +85,16 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.125);
     /*----------------------------*/
   }
-  .nav .mainMenu .closeMenu {
+  nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;
   }
-  .nav .openMenu {
+  nav .openMenu {
     display: block;
   }
-  .nav .mainMenu li a:hover {
+  nav .mainMenu li a:hover {
     background: none;
     color: white;
     font-size: 1.6rem;
@@ -127,9 +103,9 @@ body {
     display: inline-block;
     padding: 12px;
   }
-  .nav .logo img {
+  nav .logo img {
     width: 300px;
-    padding-top: 0px;
+    padding-top: 30px;
     cursor: pointer;
   }
 }
