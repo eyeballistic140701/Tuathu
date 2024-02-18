@@ -170,15 +170,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             color: black;
         }
         nav .mainMenu li a:hover {
-            border: 2px solid black;
-            border-radius: 10px;
+            color: darkgreen;
         }
         nav .openMenu {
             font-size: 2rem;
             margin: 20px;
             display: none;
             cursor: pointer;
-          color: black;
+            color: black;
         }
         nav .mainMenu .closeMenu, .icons i {
             font-size: 2rem;

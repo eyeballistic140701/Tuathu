@@ -17,7 +17,7 @@ require_once 'vendor/autoload.php';
     <script src="/index.js" defer></script>
   </head>  
   <body>
-    <nav>
+    <nav class="nav">
       <!-- Logo -->
       <div class="logo">
         <a href="/index">
