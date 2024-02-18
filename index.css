@@ -7,7 +7,7 @@ body {
   top: 0;
   display: flex;
   justify-content: space-between;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   padding: 20px;
   background-color: white;
@@ -28,6 +28,13 @@ body {
   margin-right: 50px;
 }
 
+.nav .logo img {
+  width: 300px;
+  margin: 10px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
 .map {
   display: flex;
   justify-content: center;
@@ -35,7 +42,7 @@ body {
   height: 100vh; /* Adjust as needed */
   position: sticky;
   top: 0;
-  z-index:1;
+  z-index: 1;
   padding-top: 25px; /* adjust as needed */
   padding-bottom: 70px;
 }
@@ -94,6 +101,7 @@ svg path:hover {
   height: 100vh;
   color: white;
 }
+
 .footer {
   background-color: #f8f9fa;
   padding: 20px;

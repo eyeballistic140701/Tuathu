@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atherium</title>
+    <title>Tuathu.co</title>
     <!-- External CSS/JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Google Fonts -->
@@ -151,9 +151,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         nav .logo img {
             width: 300px;
-            padding: 20px;
+            margin: 10px;
             cursor: pointer;
-            margin-bottom: 10px;
+            padding-left: 20px;
         }
         nav .mainMenu {
             display: flex;
@@ -242,7 +242,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="logo">
         <a href="/index">
           <img
-            src=""
+            src="https://cdn.glitch.global/5773f9b4-d396-42cf-b854-a0ccb2ceaa1c/MagicEraser_240218_141113.png?v=1708266293514"
             alt="Logo"
           />
         </a>

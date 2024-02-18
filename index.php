@@ -18,7 +18,15 @@ require_once 'vendor/autoload.php';
   </head>  
   <body>
     <div class="nav">
-        <div class="logo">Logo</div>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="/index">
+            <img
+              src="https://cdn.glitch.global/5773f9b4-d396-42cf-b854-a0ccb2ceaa1c/MagicEraser_240218_141113.png?v=1708266293514"
+              alt="Logo"
+            />
+          </a>
+        </div>
         <div class="login"><a href="login.php">Login</a></div>
     </div>
     <!-- Interactive map of Ireland, the data-title elements are used for the custom tooltip in JS -->
