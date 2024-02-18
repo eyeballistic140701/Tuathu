@@ -14,21 +14,32 @@ require_once 'vendor/autoload.php';
     <link rel="stylesheet" href="/index.css">
     
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="/index.js" defer></script>
   </head>  
   <body>
-    <div class="nav">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="/index">
-            <img
-              src="https://cdn.glitch.global/5773f9b4-d396-42cf-b854-a0ccb2ceaa1c/MagicEraser_240218_141113.png?v=1708266293514"
-              alt="Logo"
-            />
-          </a>
-        </div>
-        <div class="login"><a href="login.php">Login</a></div>
-    </div>
+    <nav>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/index">
+          <img
+            src="https://cdn.glitch.global/5773f9b4-d396-42cf-b854-a0ccb2ceaa1c/MagicEraser_240218_141113.png?v=1708266293514"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <div class="openMenu"><i>☰</i></div>
+      <ul class="mainMenu">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/login.php">Login</a></li>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+        <span class="icons">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-discord"></i>
+          <i class="fab fa-github"></i>
+        </span>
+      </ul>
+    </nav>
     <!-- Interactive map of Ireland, the data-title elements are used for the custom tooltip in JS -->
     <div class="map">
         <!-- Created for MapSVG plugin: http://mapsvg.com -->

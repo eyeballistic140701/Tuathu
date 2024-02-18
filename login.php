@@ -250,7 +250,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="openMenu"><i>☰</i></div>
       <ul class="mainMenu">
         <li><a href="/index">Home</a></li>
-        <li><a href="/login">Login</a></li>
+        <li><a href="/login.php">Login</a></li>
         <div class="closeMenu"><i class="fa fa-times"></i></div>
         <span class="icons">
           <i class="fab fa-twitter"></i>
