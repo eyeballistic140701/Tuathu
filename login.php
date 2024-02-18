@@ -46,6 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
 
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="login.css">
     
 </head>
 
@@ -62,8 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div class="openMenu"><i>☰</i></div>
       <ul class="mainMenu">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/login.php">Login</a></li>
+        <li><a href="index">Home</a></li>
+        <li><a href="login.php">Login</a></li>
         <div class="closeMenu"><i class="fa fa-times"></i></div>
         <span class="icons">
           <i class="fab fa-twitter"></i>

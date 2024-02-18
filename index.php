@@ -1,6 +1,6 @@
-<?php
+<!-- <?php
 require_once 'vendor/autoload.php';
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,8 +29,8 @@ require_once 'vendor/autoload.php';
       </div>
       <div class="openMenu"><i>☰</i></div>
       <ul class="mainMenu">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/login.php">Login</a></li>
+        <li><a href="./index.php">Home</a></li>
+        <li><a href="./login.php">Login</a></li>
         <div class="closeMenu"><i class="fa fa-times"></i></div>
         <span class="icons">
           <i class="fab fa-twitter"></i>
@@ -174,6 +174,42 @@ require_once 'vendor/autoload.php';
         </div>
         <div class="footer">Footer</div>
     </div>
-    <script src="script.js"></script>
+    
+    <script>
+    // JS for the tooltip which appears when a county is hovered over on the map
+    document.querySelectorAll("path").forEach(function (path) {
+      path.addEventListener("mouseenter", function (e) {
+        var tooltip = document.createElement("div");
+        tooltip.textContent = e.target.getAttribute("data-title");
+        tooltip.style.position = "fixed"; // Position tooltip relative to the viewport
+        tooltip.id = "tooltip";
+        document.body.appendChild(tooltip);
+      });
+
+      path.addEventListener("mousemove", function (e) {
+        var tooltip = document.getElementById("tooltip");
+        tooltip.style.left = e.clientX + 10 + "px"; // Position tooltip 10px to the right of the cursor
+        tooltip.style.top = e.clientY + 10 + "px"; // Position tooltip 10px below the cursor
+      });
+
+      path.addEventListener("mouseleave", function () {
+        var tooltip = document.getElementById("tooltip");
+        document.body.removeChild(tooltip);
+      });
+    });
+
+
+    const map = document.querySelector('.map');
+    window.addEventListener("scroll", function () {
+      // Calculate the scale factor
+      let scaleFactor = 1 - window.scrollY / window.innerHeight;
+
+      // Limit the scale factor to a minimum value
+      scaleFactor = Math.max(scaleFactor, 0.5);
+
+      // Apply the scale transform to the map
+      map.style.transform = `scale(${scaleFactor})`;
+    });
+    </script>
 </body>
 </html>
