@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="login.css">
     
 </head>
 
