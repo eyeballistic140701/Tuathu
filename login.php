@@ -138,12 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         /*----------------------Navigation-----------------------*/
         nav {
-        /*--------------Glass----------------*/
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(6px) saturate(180%);
-            -webkit-backdrop-filter: blur(6px) saturate(180%);
-            border: 1px solid rgba(0, 0, 0, 0.125);
-        /*------------------------------------*/
+          background-color: white;
             color: white;
             display: flex;
             justify-content: space-between;
