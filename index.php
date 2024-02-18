@@ -11,10 +11,10 @@ require_once 'vendor/autoload.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index/index.css">
     
     <!-- import the webpage's javascript file -->
-    <script src="/index.js" defer></script>
+    <script src="index/index.js" defer></script>
   </head>  
   <body>
     <nav class="nav">
