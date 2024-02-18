@@ -167,10 +167,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 10px;
             text-decoration: none;
             text-transform: uppercase;
-            color: white;
+            color: black;
         }
         nav .mainMenu li a:hover {
-            border: 2px solid white;
+            border: 2px solid black;
             border-radius: 10px;
         }
         nav .openMenu {
@@ -178,6 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin: 20px;
             display: none;
             cursor: pointer;
+          color: black;
         }
         nav .mainMenu .closeMenu, .icons i {
             font-size: 2rem;
@@ -249,8 +250,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="openMenu"><i>☰</i></div>
       <ul class="mainMenu">
         <li><a href="/index">Home</a></li>
-        <li><a href="#">Game Platform</a></li>
-        <li><a href="#">Headset</a></li>
         <li><a href="/login">Login</a></li>
         <div class="closeMenu"><i class="fa fa-times"></i></div>
         <span class="icons">
