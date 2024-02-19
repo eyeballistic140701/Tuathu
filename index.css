@@ -38,8 +38,7 @@ body {
   color: black;
 }
 .nav .mainMenu li a:hover {
-  border: 2px solid black;
-  border-radius: 10px;
+  background-color: darkgreen;
 }
 .nav .openMenu {
   font-size: 2rem;
@@ -68,7 +67,7 @@ body {
 }
 /*---------------Mobile Navigation------------------*/
 @media only screen and (max-width: 800px) {
-  nav .mainMenu {
+  .nav .mainMenu {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -85,16 +84,16 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.125);
     /*----------------------------*/
   }
-  nav .mainMenu .closeMenu {
+  .nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;
   }
-  nav .openMenu {
+  .nav .openMenu {
     display: block;
   }
-  nav .mainMenu li a:hover {
+  .nav .mainMenu li a:hover {
     background: none;
     color: white;
     font-size: 1.6rem;
@@ -103,7 +102,7 @@ body {
     display: inline-block;
     padding: 12px;
   }
-  nav .logo img {
+  .nav .logo img {
     width: 300px;
     padding-top: 30px;
     cursor: pointer;

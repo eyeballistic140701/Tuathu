@@ -20,8 +20,7 @@ document.querySelectorAll("path").forEach(function (path) {
   });
 });
 
-
-const map = document.querySelector('.map');
+const map = document.querySelector(".map");
 window.addEventListener("scroll", function () {
   // Calculate the scale factor
   let scaleFactor = 1 - window.scrollY / window.innerHeight;
@@ -31,4 +30,17 @@ window.addEventListener("scroll", function () {
 
   // Apply the scale transform to the map
   map.style.transform = `scale(${scaleFactor})`;
+});
+
+const mainMenu = document.querySelector(".mainMenu");
+const closeMenu = document.querySelector(".closeMenu");
+const openMenu = document.querySelector(".openMenu");
+
+openMenu.addEventListener("click", () => {
+  mainMenu.style.display = "flex";
+  mainMenu.style.top = "0";
+});
+
+closeMenu.addEventListener("click", () => {
+  mainMenu.style.top = "-150vh";
 });

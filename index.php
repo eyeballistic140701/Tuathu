@@ -17,7 +17,7 @@ require_once 'vendor/autoload.php';
     <script src="./index.js" defer></script>
   </head>  
   <body>
-    <nav>
+    <div class="nav">
       <!-- Logo -->
       <div class="logo">
         <a href="/index">
@@ -39,7 +39,7 @@ require_once 'vendor/autoload.php';
           <i class="fab fa-github"></i>
         </span>
       </ul>
-    </nav>
+    </div>
     <!-- Interactive map of Ireland, the data-title elements are used for the custom tooltip in JS -->
     <div class="map">
         <!-- Created for MapSVG plugin: http://mapsvg.com -->
