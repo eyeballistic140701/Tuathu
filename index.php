@@ -17,11 +17,11 @@ require_once 'vendor/autoload.php';
     <script src="./index.js" defer></script>
   </head>  
   <body>
-    <div class="nav">
+    <div class="nav" id="navbar">
       <!-- Logo -->
       <div class="logo">
         <a href="/index">
-          <img
+          <img 
             src="https://cdn.glitch.global/5773f9b4-d396-42cf-b854-a0ccb2ceaa1c/MagicEraser_240218_141113.png?v=1708266293514"
             alt="Logo"
           />
@@ -41,7 +41,7 @@ require_once 'vendor/autoload.php';
       </ul>
     </div>
     <!-- Interactive map of Ireland, the data-title elements are used for the custom tooltip in JS -->
-    <div class="map">
+    <div class="map" id = "map">
         <!-- Created for MapSVG plugin: http://mapsvg.com -->
         <svg
         xmlns:mapsvg="http://mapsvg.com"
@@ -162,16 +162,58 @@ require_once 'vendor/autoload.php';
         id="IE-WW" />
         </svg>
     </div>
-    <div class="content-section">
-        <div class="search-bar">
-            <input type="text" placeholder="Search P">
+    <div class="search-bar"  id="search-container">
+            <input type="text" id="search" placeholder="" >
+           <!-- <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/loupe.png?v=1708375651739" alt="Search Icon"> --> <!-- icon by Freepik -->
         </div>
-        <div class="category">Categories: Food</div>
-        <div class="company-info">
-            Company Name<br>
-            Category<br>
-            Location
-        </div>
+    <div class="categories-section">
+  <h2>Categories</h2>
+  <div class="categories-icons">
+    <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 1</p>
+    </div>
+        <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 2</p>
+    </div>
+        <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 3</p>
+    </div>
+        <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 4</p>
+    </div>
+        <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 5</p>
+    </div>
+    <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 6</p>
+    </div>
+            <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 7</p>
+    </div>
+        <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 8</p>
+    </div>
+        <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 9</p>
+    </div>
+        <div class="category">    
+      <img src="https://cdn.glitch.global/8253ecb0-aa17-4bc4-83c4-b5ec23fd1661/circle.png?v=1708380456160" alt="Category 1">
+      <p>Category 10</p>
+    </div>
+    
+    <!-- Add more img elements for each category icon -->
+  </div>
+</div>
+
         <div class="footer">Footer</div>
     </div>
     <script src="script.js"></script>

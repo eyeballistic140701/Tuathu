@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
   let scaleFactor = 1 - window.scrollY / window.innerHeight;
 
   // Limit the scale factor to a minimum value
-  scaleFactor = Math.max(scaleFactor, 0.5);
+  scaleFactor = Math.max(scaleFactor, 0);
 
   // Apply the scale transform to the map
   map.style.transform = `scale(${scaleFactor})`;
@@ -44,3 +44,34 @@ openMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   mainMenu.style.top = "-150vh";
 });
+
+window.onload = function() {
+  var searchInput = document.getElementById('search');
+  
+  // Set the placeholder text based on the window's width
+  if (window.innerWidth <= 800) {
+    searchInput.placeholder = "Search";
+  } else {
+    searchInput.placeholder = "Search Products, Categories or Location...";
+  }
+  
+  var testDiv = document.createElement('div');
+  
+  testDiv.style.position = 'absolute';
+  testDiv.style.visibility = 'hidden';
+  testDiv.style.height = 'auto';
+  testDiv.style.width = 'auto';
+  testDiv.style.whiteSpace = 'nowrap';
+  testDiv.innerHTML = searchInput.placeholder;
+  
+  document.body.appendChild(testDiv);
+  
+  searchInput.style.width = testDiv.clientWidth + 'px';
+  
+  document.body.removeChild(testDiv);
+};
+
+
+
+
+
