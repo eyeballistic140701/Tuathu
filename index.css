@@ -16,6 +16,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
+  border-bottom: 2px solid #e1ca22;
 }
 .nav .logo img {
   width: 300px;
@@ -111,6 +112,7 @@ body {
 /*-----------------End of Navigation---------------------*/
 
 .map {
+  background-image:/assets/mapBackground.webp;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +133,7 @@ svg path {
 
 /* The svg path:hover styles apply to the counties when they're hovered over */
 svg path:hover {
-  fill: #006284; /* The fill color of a county when it's hovered over */
+  fill: #32cb84; /* The fill color of a county when it's hovered over */
   transition: 0.6s; /* The time it takes to change to the hover color */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over a county */
 }
