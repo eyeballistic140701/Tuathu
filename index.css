@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: lightblue;
+  background-image:url('/assets/mapBackground.jpg');
 }
 
 
@@ -112,7 +112,7 @@ body {
 /*-----------------End of Navigation---------------------*/
 
 .map {
-  background-image:/assets/mapBackground.webp;
+
   display: flex;
   justify-content: center;
   align-items: center;
