@@ -1,10 +1,8 @@
 body {
   font-family: Arial, sans-serif;
-  background-image:url('/assets/mapBackground.jpg');
+  background-image:url('https://cdn.glitch.global/5773f9b4-d396-42cf-b854-a0ccb2ceaa1c/pexels-laker-6156390.jpg?v=1708361597774')
 }
-
-
-/*----------------------Navigation-----------------------*/
+    /*----------------------Navigation-----------------------*/
 .nav {
   background-color: #106842;
   color: white;
