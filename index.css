@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #01171b;
+  background-color: lightblue;
 }
 
 
 /*----------------------Navigation-----------------------*/
 .nav {
-  background-color: white;
+  background-color: #106842;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -124,7 +124,7 @@ body {
 
 /* The svg path styles apply to the paths in the SVG, which represent the counties on the map */
 svg path {
-  fill: #00394f; /* The fill color of the counties */
+  fill: #106842; /* The fill color of the counties */
   stroke: #eee; /* The color of the borders between counties */
   stroke-width: 0.25; /* The width of the borders between counties */
 }
@@ -164,7 +164,7 @@ svg path:hover {
   padding: 10px;
 }
 .category {
-  background-color: #e9ecef;
+  background-color: #827a53;
   padding: 20px;
   text-align: center;
 }
